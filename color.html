@@ -1,15 +1,93 @@
-<div id="container">
-  
-  <p><a href="https://en.wikipedia.org/wiki/Red">
-    RED
-  </a></p>
-  
-  <p><a href="https://en.wikipedia.org/wiki/Blue">
-    BLUE
-  </a></p>
-  
-  <p><a href="https://en.wikipedia.org/wiki/Yellow">
-    Yellow
-  </a></p>
-  
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructura de página</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+      background-color: #c8f7c5; /* verde claro */
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #f9f7c5; /* amarillo claro */
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+    }
+    main {
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .principal {
+      background-color: #f7c5c5; /* rojo claro */
+      padding: 1rem;
+    }
+    .proyectos {
+      background-color: #ffe0b2; /* naranja claro */
+      padding: 1rem;
+    }
+    footer {
+      background-color: #c5d8f7; /* azul claro */
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Encabezado</h1>
+  </header>
+
+  <nav>
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+    <a href="#">Enlace 3</a>
+  </nav>
+
+  <main>
+    <section class="principal">
+      <h2>Contenido principal</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eligendi saepe natus! Ipsam, dolorem suscipit ex quasi?</p>
+      <p>Ea veniam amet eveniet quos necessitatibus esse totam. Tenetur, aut. Repudiandae, deserunt! Laborum omnis ut vel repellat animi ipsam!</p>
+    </section>
+
+    <section class="proyectos">
+      <h2>Proyectos</h2>
+      <ul>
+        <li>Lorem, ipsum</li>
+        <li>Lorem, ipsum</li>
+        <li>Lorem, ipsum</li>
+        <li>Labore, quidem!</li>
+        <li>Lorem, ipsum</li>
+        <li>Lorem, natus!</li>
+        <li>Lorem, ipsum</li>
+        <li>Esse, maiores?</li>
+        <li>Lorem, ipsum</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p>Aquí iría la información de contacto.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Pie de página</p>
+  </footer>
+
+</body>
+</html>
