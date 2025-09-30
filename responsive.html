@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - ELOY MATOS</title>
+    <style>
+        /* Selector universal */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo base (para móviles primero) */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #222a2b, #06f506);
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c4a4b, #1a3a3b);
+            color: #fff;
+            padding: 30px 20px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #dde3e9;
+            margin-bottom: 15px;
+        }
+
+        /* Lista */
+        nav ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 5px 0;
+        }
+
+        /* Enlaces */
+        a {
+            color: #4da6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Etiqueta sección */
+        section {
+            background: linear-gradient(135deg, #0d7c0d, #4caf50);
+            margin: 0;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        /* Articulo */
+        article {
+            margin-bottom: 20px;
+        }
+
+        /* Tablets (pantallas de 768px o más) */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                color: #16a085;
+            }
+            body {
+                background: linear-gradient(135deg, #222a2b, #46385c);
+            }
+            section {
+                background: linear-gradient(135deg, #46385c, #6b4d7d);
+            }
+        }
+
+        /* Escritorios (pantallas de 1024px o más) */
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: xx-large;
+                color: #8e44ad;
+            }
+            body {
+                background: linear-gradient(135deg, #ff0000, #b30000);
+            }
+            section {
+                background: linear-gradient(135deg, #cc0000, #990000);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eloy Matos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Maquetación</a></li>
+                <li><a href="CSS3-style1.html">CSS3</a></li>
+                <li><a href="CSS3-style2.html">CSS3</a></li>
+                <li><a href="CSS-basic.html">CSS</a></li>
+                <li><a href="responsive.html">Responsive</a></li>
+                <li><a href="tailwind.html">Tailwind</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Sobre mi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequat adipisci canes emat. distinctio in iusum alienum suscipit sit quasi!</p>
+        <p>Ex veritatem magni modi necessitatibus omnia facere. Tenetur, sed. Repudiandae, deserunt! Laborum omnis ut vel repellat sunt quam!</p>
+    </section>
+
+    <section>
+        <h2>Proyectos</h2>
+        <article>
+            <p>Lorem, ipsum.</p>
+            <p>Beatae, nihilum.</p>
+        </article>
+        <article>
+            <p>Lorem, ipsum.</p>
+            <p>Iuste, tempmtalitas.</p>
+        </article>
+        <article>
+            <p>Lorem, ipsum.</p>
+            <p>Eos, maxime?</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <p>Información de contacto aquí.</p>
+    </section>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Básico - ELOY MATOS</title>
+    <title>CSS3 Estilo 2 - ELOY MATOS</title>
     <style>
         /* Selector universal */
         * {
@@ -21,12 +21,65 @@
             padding: 20px;
         }
 
-        /* Header */
+        /* Header con efecto 3D perspectiva */
         header {
             background-color: #2c3e50;
             color: #fff;
-            padding: 30px 20px;
+            padding: 80px 20px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .box {
+            display: flex;
+            margin: 0 auto 30px;
+        }
+
+        .inner {
+            width: 400px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 4em;
+            font-family: sans-serif;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .box .inner:first-child {
+            background-color: indianred;
+            color: darkred;
+            transform-origin: right;
+            transform: perspective(100px) rotateY(-15deg);
+        }
+
+        .box .inner:last-child {
+            background-color: lightcoral;
+            color: antiquewhite;
+            transform-origin: left;
+            transform: perspective(100px) rotateY(15deg);
+        }
+
+        .box .inner span {
+            position: absolute;
+            animation: marquee 5s linear infinite;
+        }
+
+        .box .inner:first-child span {
+            animation-delay: 2.5s;
+            left: -100%;
+        }
+
+        @keyframes marquee {
+            from {
+                left: 100%;
+            }
+            to {
+                left: -100%;
+            }
         }
 
         /* Lista */
@@ -36,11 +89,13 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
         /* Enlaces */
         a {
             color: #fff;
+            text-decoration: none;
         }
 
         a:hover {
@@ -49,6 +104,11 @@
 
         /* Pseudo-clase */
         nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Enlace activo */
+        nav a.activo {
             color: #1abc9c;
         }
 
@@ -79,13 +139,20 @@
 </head>
 <body>
     <header>
-        <h1>ELOY MATOS</h1>
+        <div class="box">
+            <div class="inner">
+                <span>ELOY MATOS</span>
+            </div>
+            <div class="inner">
+                <span>ELOY MATOS</span>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Maquetación</a></li>
-                <li><a href="CSS3-style1.html" class="activo">CSS3 </a></li>
-                <li><a href="CSS3-style2.html">CSS3 </a></li>
-                <li><a href="CSS-basic.html">CSS</a></li>
+                <li><a href="CSS3-style1.html">CSS3</a></li>
+                <li><a href="CSS3-style2.html" class="activo">CSS3</a></li>
+                <li><a href="CSS-basic.html">CSS Básico</a></li>
                 <li><a href="responsive.html">Responsive</a></li>
                 <li><a href="tailwind.html">Tailwind</a></li>
                 <li><a href="javascript.html">JavaScript</a></li>
